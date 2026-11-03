@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff0f5">
+<title>For Binadi | Happy 21st Birthday</title>
+<style>
+:root{--pink:#ed82a8;--rose:#bd4d7c;--ink:#684257}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:Georgia,'Times New Roman',serif;background:radial-gradient(circle at 12% 8%,#ffe0ec,transparent 34%),radial-gradient(circle at 90% 48%,#f4e5ff,transparent 32%),#fff8f8;overflow-x:hidden}
+#hearts{position:fixed;inset:0;pointer-events:none;z-index:5;overflow:hidden}.heart{position:absolute;bottom:-30px;animation:floatUp linear forwards;opacity:.7}@keyframes floatUp{to{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+main{max-width:900px;margin:auto;padding:25px 18px 70px}.hero{min-height:100svh;display:grid;place-items:center;text-align:center}.intro{max-width:660px;padding:48px 25px;border:1px solid #f5c5d7;border-radius:30px;background:#ffffffd9;box-shadow:0 20px 70px #d77d9c25;backdrop-filter:blur(8px)}
+.kicker,.section-label{font:600 11px Arial,sans-serif;letter-spacing:4px;text-transform:uppercase;color:#bd6688}.hero h1{font-size:clamp(48px,10vw,86px);line-height:.98;margin:20px 0 12px;color:#bd4e7c;font-weight:normal}.hero p{font-size:18px;line-height:1.7;color:#80566b}
+.btn{border:0;border-radius:99px;background:linear-gradient(120deg,#ed79a1,#bd4d80);color:white;padding:15px 26px;font:600 12px Arial,sans-serif;letter-spacing:1px;cursor:pointer;box-shadow:0 10px 25px #ce638b45;transition:.2s}.btn:hover{transform:translateY(-2px)}.small{font:12px Arial,sans-serif;color:#a57d8e;margin-top:17px}
+section{margin:30px auto;padding:42px 24px;text-align:center;border-radius:28px;background:#ffffffd9;border:1px solid #f4d5df;box-shadow:0 14px 45px #a94d7220}h2{font-size:clamp(30px,6vw,46px);font-weight:normal;color:#b94f7a;margin:12px 0 20px}.message{font-size:19px;line-height:1.9;max-width:650px;margin:auto;color:#775568}.message em{color:#bf5680}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:28px auto 0;max-width:760px}.photo{aspect-ratio:3/4;overflow:hidden;border-radius:20px;border:5px solid white;box-shadow:0 8px 24px #b75d8125;background:#f8e5ed}.photo img{display:block;width:100%;height:100%;object-fit:cover}
+.cake{position:relative;margin:72px auto 25px;width:190px;height:105px;border-radius:12px 12px 20px 20px;background:linear-gradient(#ffbfd2 0 22%,#fff 22% 31%,#e987a9 31%);box-shadow:0 12px 0 #d7658b}.cake:before{content:"";position:absolute;left:-10px;right:-10px;top:-15px;height:27px;border-radius:50%;background:#fff0f4;border:3px solid #ef9db9}.candle{position:absolute;left:50%;top:-66px;transform:translateX(-50%);width:10px;height:52px;border-radius:5px;background:repeating-linear-gradient(45deg,#fff 0 6px,#f3a0bd 6px 12px)}.flame{position:absolute;top:-24px;left:50%;width:16px;height:23px;transform:translateX(-50%);border-radius:50% 50% 50% 0;background:radial-gradient(circle at 55% 65%,#fff7aa 0 15%,#ffbd55 38%,#ff7c54 70%);animation:flicker .6s infinite alternate;filter:drop-shadow(0 0 9px #ffb64d)}@keyframes flicker{to{transform:translateX(-50%) rotate(8deg) scale(.88)}}.cake.blown .flame{display:none}.footer{text-align:center;padding:30px;color:#b27b91;font:12px Arial,sans-serif;letter-spacing:1px}.hidden{display:none}
+@media(max-width:600px){.gallery{gap:8px}.photo{border-width:3px;border-radius:13px}section{padding:34px 16px}.message{font-size:17px}.intro{padding:38px 18px}}
+</style>
+</head>
+<body><div id="hearts"></div><main>
+<header class="hero"><div class="intro"><div class="kicker">A little something, just for you</div><h1>Happy Birthday,<br><span>Binadi</span> ♡</h1><p>Someone as special as you deserves a moment that feels a little magical.</p><button class="btn" id="openBtn">OPEN YOUR SURPRISE ✨</button><div class="small">A little birthday magic is waiting inside</div></div></header>
+<div id="surprise" class="hidden">
+<section><div class="section-label">Today is all about you</div><h2>Twenty-one looks beautiful on you</h2><p class="message">Happy 21st Birthday, <em>Binadi Dahamya!</em> 💗<br><br>May this new chapter of your life bring you endless happiness, beautiful memories, unexpected blessings, and all the little things that make your heart smile. May you always find reasons to laugh, courage to chase your dreams, and people who remind you how wonderful you are.<br><br>Never stop being your lovely self. You deserve every bit of happiness this world has to offer. Keep shining, keep smiling, and make this year unforgettable.<br><br><em>Wishing you a day as lovely, bright, and special as you are.</em></p></section>
+<section><div class="section-label">Little moments, big memories</div><h2>Your memories ♡</h2><p class="message">Three little snapshots of beautiful memories.</p><div class="gallery"><div class="photo"><img src="1.png" alt="Binadi - memory one"></div><div class="photo"><img src="2.png" alt="Binadi - memory two"></div><div class="photo"><img src="3.png" alt="Binadi - memory three"></div></div></section>
+<section><div class="section-label">Make a wish</div><h2>A birthday wish for you 🎂</h2><p class="message">Close your eyes, make a wish, and let the universe hear it.</p><div class="cake" id="cake"><div class="candle"><div class="flame"></div></div></div><button class="btn" id="blowBtn">BLOW OUT THE CANDLE ✨</button><p class="small" id="wishText">May every wish you make find its way to you.</p></section>
+<section><div class="section-label">One last thing</div><h2>Keep this smile forever ♡</h2><p class="message">No matter where life takes you, I hope it gives you countless reasons to smile. Thank you for being you. Here's to 21, to new adventures, and to a year full of magic.<br><br><em>With warmest wishes, always. 💕</em></p></section>
+</div><footer class="footer">MADE WITH ♡ · A LITTLE SURPRISE FOR BINADI</footer></main>
+<audio id="piano" src="music.mp3" loop preload="none"></audio>
+<button id="musicBtn" class="btn" style="position:fixed;right:16px;bottom:16px;z-index:10;padding:12px 17px">♫ PLAY MUSIC</button>
+<script>
+const openBtn=document.getElementById('openBtn'),surprise=document.getElementById('surprise'),audio=document.getElementById('piano'),musicBtn=document.getElementById('musicBtn');
+openBtn.addEventListener('click',()=>{surprise.classList.remove('hidden');openBtn.textContent='ENJOY YOUR SURPRISE ♡';openBtn.disabled=true;surprise.scrollIntoView({behavior:'smooth'});});
+musicBtn.addEventListener('click',async()=>{if(audio.paused){try{await audio.play();musicBtn.textContent='♫ PAUSE MUSIC'}catch(e){musicBtn.textContent='ADD music.mp3 FIRST'}}else{audio.pause();musicBtn.textContent='♫ PLAY MUSIC'}});
+document.getElementById('blowBtn').addEventListener('click',()=>{document.getElementById('cake').classList.add('blown');document.getElementById('wishText').textContent='Wish sent to the universe! May it come true, Binadi. 💗';document.getElementById('blowBtn').textContent='YOUR WISH IS ON ITS WAY ♡';});
+function heart(){const h=document.createElement('div');h.className='heart';h.textContent=['♡','♥','✧'][Math.floor(Math.random()*3)];h.style.left=Math.random()*100+'vw';h.style.fontSize=(13+Math.random()*18)+'px';h.style.animationDuration=(7+Math.random()*7)+'s';h.style.color=['#e88aaa','#d78ac8','#f1a8bd'][Math.floor(Math.random()*3)];document.getElementById('hearts').appendChild(h);setTimeout(()=>h.remove(),14500)}setInterval(heart,850);
+</script></body></html>
